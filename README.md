@@ -12,4 +12,6 @@ Documents:
 
 ### 1.2 源码错误与修改:
 
-在计算IQ， IU, QI, UI部分P02的表达式中缺少了 $\frac{2l+1}{4\pi}$ 这一因子，应做如下修改
+/xQML-master/src/libcov.c Line 221,Line 229 在计算TE, TB部分P02的表达式中缺少了 $\frac{2l+1}{4\pi}$ 这一因子，应做如下修改:
+
+P02 = -d20[l]; → P02 = norm*(-d20[l]);
